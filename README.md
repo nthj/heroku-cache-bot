@@ -25,7 +25,7 @@ SECURE INSTALLATION (5 minutes)
 
 Just set up the app for yourself:
 
-    git clone git@github.com:third-prestige/heroku-cache-bot.git CacheBot
+    git clone git@github.com:nthj/heroku-cache-bot.git CacheBot
     cd CacheBot
     heroku create <prefix>-cache-bot --stack cedar
     git push heroku master
@@ -47,7 +47,7 @@ Simply copy it into your local Rails project, and it will watch for any changes 
 
 Sure, other changes might affect your cache as well, but this should catch most of them.  You can always change this hook later, or manually append #bust to your commit.
 
-    curl https://raw.github.com/thirdprestige/heroku-cache-bot/master/bin/commit-msg > .git/hooks/commit-msg
+    curl https://raw.github.com/nthj/heroku-cache-bot/master/bin/commit-msg > .git/hooks/commit-msg
     chmod +x .git/hooks/commit-msg
     echo "Installed cache-bust commit hook into .git/hooks/commit-msg"
 
